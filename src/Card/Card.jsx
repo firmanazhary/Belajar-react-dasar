@@ -1,4 +1,4 @@
-
+import Stopwatch from "./Usestat";
 export default function Card({imageUrl , title = "judul belum di isi",...data}) {
     return(
     <div className="card">
@@ -6,6 +6,7 @@ export default function Card({imageUrl , title = "judul belum di isi",...data}) 
         <h2>{title}</h2>
         <p>{data.desc}</p>
         <button>{data.btn}</button>
+        <Stopwatch />
     </div>
     )
 }
